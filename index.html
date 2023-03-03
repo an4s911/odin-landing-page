@@ -16,9 +16,10 @@
         </div>
         <div class="nav">
             <ul>
-                <li><a href="#">header link one</a></li>
-                <li><a href="#">header link two</a></li>
-                <li><a href="#">header link three</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About/a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign in</a></li>
             </ul>
         </div>
     </div>
@@ -26,9 +27,9 @@
     <div class="hero">
         <div class="hero-left">
             <h1>This website is awesome</h1>
-            <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is
+            <p class="caption">This website has some subtext that goes here under the main title. It's a smaller font and the color is
                 lower contrast</p>
-            <button>Sign Up</button>
+            <button>Learn More</button>
         </div>
 
         <div class="hero-right">
@@ -41,22 +42,22 @@
         <div class="boxes">
             <div class="info">
                 <div class="box"></div>
-                <p>this is some subtext under and illustration or image</p>
+                <p class="subtext">this is some subtext under and illustration or image</p>
             </div>
 
             <div class="info">
                 <div class="box"></div>
-                <p>this is some subtext under and illustration or image</p>
+                <p class="subtext">this is some subtext under and illustration or image</p>
             </div>
 
             <div class="info">
                 <div class="box"></div>
-                <p>this is some subtext under and illustration or image</p>
+                <p class="subtext" >this is some subtext under and illustration or image</p>
             </div>
 
             <div class="info">
                 <div class="box"></div>
-                <p>this is some subtext under and illustration or image</p>
+                <p class="subtext">this is some subtext under and illustration or image</p>
             </div>
         </div>
     </div>
@@ -72,13 +73,24 @@
                 <h4>Call to action! It's time!</h4>
                 <p>Sign up for our product by clicking that button right over there!</p>
             </div>
-            <button>Sign Up</button>
+              <input class="sign-up" type="submit" value="Sign Up" />
         </div>
     </div>
 
     <div class="footer">
         Copyright &copy; The Odin Project 2022
     </div>
+    <script>
+    const learnMoreBtn = document.querySelector("button");
+    learnMoreBtn.addEventListener("click", () => {
+      alert("You don't want to know Me. So skip it!");
+    });
+
+    const signUpBtn = document.querySelector(".sign-up");
+    signUpBtn.addEventListener("click", () => {
+      alert("This feature will be activated later soon!");
+    });
+  </script>
 </body>
 
 </html>
